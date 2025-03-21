@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+</head>
+
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+
+    <div class="div1 bg-white dark:bg-black  w-[98%] m-auto flex justify-between items-center py-5 px-4">
+        <div class="div111 ">
+            <button id="dark-light" class="px-5"><i class="fa-regular fa-sun fa-xl "></i></button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="d lg:hidden inline ">
+                <i class="fa-solid fa-bars menu px-3"></i>
+            </div>
+        </div>
+
+        <p class="text-[24px] -order-2 lg:order-1 ">Avion</p>
+
+        <div class="div11 lg:inline hidden order-3">
+            <i class="fa-solid   fa-cart-shopping px-3"></i>
+            <i class="fa-regular fa-circle-user"></i>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('dark-light');
+        const icon = toggleButton.querySelector('i');
+
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        } else {
+            document.documentElement.classList.remove('dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
