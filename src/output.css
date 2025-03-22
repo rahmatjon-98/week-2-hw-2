@@ -1080,6 +1080,10 @@ video {
   padding-bottom: 8rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .text-center {
   text-align: center;
 }
