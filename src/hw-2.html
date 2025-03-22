@@ -16,6 +16,18 @@
         }
     </script>
 
+    <style>
+        .custom-bg {
+            background-image: url(./Image.svg);
+        }
+
+        @media (max-width: 640px) {
+            .custom-bg {
+                background-image: url(./Image\ \(2\).svg);
+            }
+        }
+    </style>
+
 </head>
 
 <body class="bg-white dark:bg-black text-black dark:text-white">
@@ -146,6 +158,30 @@
         <img src="./Image Block.svg" alt=" this is image">
     </div>
 
+    <div class="div7 my-10 lg:my-0 w-full py-5 custom-bg bg-cover bg-center text-white">
+
+        <div class="box w-[90%] m-auto lg:p-20">
+            <div class="lg:hidden block">
+                <p class="text-[24px] lg:text-[36px]">Join the club and get the benefits</p>
+                <p class="text-[14px] lg:text-[16px] py-4 lg:py-10">
+                    Sign up for our newsletter and
+                    receive exclusive offers on new
+                    ranges, sales, pop
+                    up stores and more
+                </p>
+                <p class="lg:inline block lg:px-5 py-2"><i class="fa-solid fa-circle-check pr-2"></i> Exclusive offers
+                </p>
+                <p class="lg:inline block lg:px-5 py-2"><i class="fa-solid fa-circle-check pr-2"></i> Free events </p>
+                <p class="lg:inline block lg:px-5 py-2"><i class="fa-solid fa-circle-check pr-2"></i> Large discounts
+                </p>
+            </div>
+            <form class="div62 lg:pt-44 lg:w-[60%] w-full m-auto pt-10 flex justify-center text-[16px] ">
+                <input class="py-4 px-6 bg-slate-100 w-[60%]" type="email" placeholder="your@email.com">
+                <button class="b1 py-4 px-6 text-white bg-[#2A254B]">Sign up</button>
+            </form>
+        </div>
+
+    </div>
 
     <script>
         const toggleButton = document.getElementById('dark-light');
