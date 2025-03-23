@@ -28,8 +28,8 @@
 
 **AVION LLC**  
 адрес: Душанбе, Тоҷикистон  
- email: tom98john@gmail.com 
- ракам: +992 948 77 33 99 
+email: tom98john@gmail.com 
+ракам: +992 948 77 33 99 
 
 ##  Лицензия
 
